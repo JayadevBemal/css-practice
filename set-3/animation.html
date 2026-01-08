@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @keyframes progressbar {
+            from {width: 0%;}
+            to{width: 100%;}
+        }
+
+
+        @keyframes balldrop {
+            0%{}
+            25%{transform:translateX(23vw) translateY(32vh);}
+        50%{transform: translateY(-32vh);transform: translateX(46vw);}
+        75%{transform: translateY(32vh);transform: translateX(90vw);}
+            100%{ transform: translateX(90vw);}
+        }
+        
+.container1{height: 20px;width: 80vw;background-color: rgb(50, 29, 134);margin: auto;border:5px solid greenyellow;border-radius: 20px;}
+
+.bar{background-color: red;height: 100%;border: none;border-radius: 20px;
+animation: progressbar 2s ease-out  infinite alternate ;}
+
+
+.container2{height: 200px;background-color:blueviolet;border: none;border-radius: 10px;position: relative;top: 20px;}
+
+.ball{background-color: red;width: 25px;height: 25px;border: none;border-radius: 120px;animation: balldrop ease-in-out 5s infinite;}
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="bar"></div>
+    </div>
+    <div class="container2">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
